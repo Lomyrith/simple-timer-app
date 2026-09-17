@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.displayTimer:after {
+  content: "s";
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+input {
+  border: solid 1px black;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+button {
+  border-radius: 5px;
+}
+button:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+.t-1 {
+  font-size: 3.2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.t-4 {
+  font-size: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-text,
+.none-error-text {
+  height: 1rem;
+  font-size: 0.8rem;
+  color: #e7495b;
+  font-weight: bold;
+  font-style: italic;
+}
+.error-text::before {
+  content: "❌ ";
+}
+.error-text::after {
+  content: "❗";
+}
